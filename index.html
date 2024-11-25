@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone Call Mimic</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="iphone">
+    <div class="screen">
+      <div id="call-screen">
+        <p id="caller-name">Daddy</p>
+        <p id="call-status">Calling...</p>
+        <div id="call-actions">
+          <button class="decline">Decline</button>
+          <button class="accept" onclick="acceptCall()">Accept</button>
+        </div>
+      </div>
+
+      <div id="in-call-screen" class="hidden">
+        <p id="call-timer">00:00</p>
+        <div class="icon-grid">
+          <button class="icon">Mute</button>
+          <button class="icon">Keypad</button>
+          <button class="icon">Audio</button>
+          <button class="icon">Add Call</button>
+          <button class="icon">FaceTime</button>
+          <button class="icon">Contacts</button>
+        </div>
+        <button class="end-call" onclick="endCall()">End Call</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
